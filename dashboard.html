@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HEIMDALL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="HEIMDALL REAL TIME ACCESS CONTROL SYSTEM" />
+    <meta name="keywords" content="Access Control Demo" />
+    <meta name="author" content="Paulo Marquez Herrero, Mobile Cloud Architect" />
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet"> 
+    <link href="css/charts-graphs.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    <!-- Main Container start -->
+    <div class="dashboard-container">
+
+        <div class="container">
+            <!-- Dashboard Wrapper Start -->
+            <div class="dashboard-wrapper-lg">
+
+            <!-- Row Start -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <div class="title">
+                                Global Sensor Usage [24 Hours]
+                            </div>
+                        </div>
+                        <div class="widget-body">
+                            <section id="globalUsageChart" class="chart-height-lg"></section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <div class="title">
+                                Hourly Sensor Usage [24 Hours]
+                            </div>
+                        </div>
+                        <div class="widget-body">
+                            <section id="hourlyUsageChart" class="chart-height-lg"></section>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+          <!-- Row End -->
+          
+        </div>
+        <!-- Dashboard Wrapper End -->
+
+        <footer>
+          <p>Heimdall - ©NordStar 2016</p>
+        </footer>
+
+      </div>
+    </div>
+    <!-- Main Container end -->
+
+    <script src="js/jquery/jquery-2.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/zingchart/zingchart.min.js"></script>
+    <script src="js/zingchart/zingchart.jquery.js"></script>
+    <script src="js/heimdall/websocket.js"></script>
+    
+  </body>
+</html>
